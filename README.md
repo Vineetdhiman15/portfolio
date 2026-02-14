@@ -1,14 +1,23 @@
-# Scrollytelling Portfolio
+# Lead Software Engineer Portfolio
 
-A high-performance personal portfolio website featuring a scroll-linked image sequence animation.
+A premium, high-performance scrollytelling portfolio showcasing architectural leadership, AI integration, and core engineering principles.
 
 ## Tech Stack
 
-- **Framework:** Next.js 14 (App Router)
+- **Framework:** Next.js 15 (App Router)
 - **Styling:** Tailwind CSS (v4)
 - **Animation:** Framer Motion
-- **Rendering:** HTML5 Canvas
+- **Rendering:** HTML5 Canvas (Image Sequence Scrubbing)
 - **Type Safety:** TypeScript
+
+## Features
+
+- **Optimized Sticky Scroller:** A 500vh scroll section that scrubs through a 120-frame WebP sequence using HTML5 Canvas for peak performance.
+- **Narrative Overlay:** Scroll-linked text elements that introduce technical expertise with smooth parallax effects.
+- **About Section:** Structured bio highlighting UI engineering, AI-augmented development, and performance optimization.
+- **Professional Experience:** Detailed career history with large, optimized brand logos and impact-driven descriptions.
+- **Engineering Philosophy:** Dedicated section on lead engineer mindsets: Scalable Architecture, AI & Automation, and Product-Minded Engineering.
+- **Draggable Testimonials:** Social proof carousel featuring real recommendations from leads and teammates at JPMorgan, EY, and more.
 
 ## Getting Started
 
@@ -24,8 +33,10 @@ A high-performance personal portfolio website featuring a scroll-linked image se
 
 3. Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-## Features
+## Deployment
 
-- **Sticky Scroller:** A 500vh scroll section that scrubs through a 120-frame WebP sequence efficiently using HTML5 Canvas.
-- **Parallax Overlay:** Text elements that float over the canvas with different scroll speeds.
-- **Glassmorphism Projects Grid:** A modern project showcase with backdrop blur and hover effects.
+This project is optimized for **Vercel**. 
+
+1. Push to a GitHub repository.
+2. Link the repository to a new Vercel project.
+3. The build settings are auto-detected (Next.js).
