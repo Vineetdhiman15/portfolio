@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function Experience() {
     const experiences = [
@@ -60,7 +61,13 @@ export default function Experience() {
                 <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] rounded-full bg-purple-900/10 blur-[120px]" />
             </div>
 
-            <div className="relative w-full max-w-7xl z-10">
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="relative w-full max-w-7xl z-10"
+            >
                 <h2 className="text-4xl md:text-6xl font-bold mb-16 text-white tracking-tight">Professional Experience</h2>
 
                 <div className="grid grid-cols-1 gap-8 w-full">
@@ -90,7 +97,7 @@ export default function Experience() {
                                 </div>
                             </div>
 
-                            <div className="z-10 md:w-2/3 md:pl-8 border-l border-white/10 md:border-l-1 border-t-0 md:border-t-0 border-l-0">
+                            <div className="z-10 md:w-2/3 md:pl-8 md:border-l border-white/10">
                                 <p className="text-gray-300 text-base leading-relaxed">
                                     {exp.description}
                                 </p>
@@ -98,7 +105,7 @@ export default function Experience() {
                         </div>
                     ))}
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 }

@@ -10,7 +10,7 @@ import Testimonials from '@/components/Testimonials';
 
 export default function Home() {
   return (
-    <main className="w-full bg-[#121212] flex flex-col items-center">
+    <main className="w-full bg-[#0a0a0a] flex flex-col items-center">
 
       {/* Scroll Section */}
       <ScrollyCanvas frameCount={120}>

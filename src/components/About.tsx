@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 export default function About() {
     const highlights = [
         { title: "High-quality UI engineering", desc: "Pixel-perfect, responsive, accessible interfaces" },
@@ -11,14 +13,20 @@ export default function About() {
     ];
 
     return (
-        <section className="relative z-20 w-full py-24 px-6 md:px-12 flex flex-col items-center overflow-hidden bg-[#121212]">
+        <section className="relative z-20 w-full py-24 px-6 md:px-12 flex flex-col items-center overflow-hidden bg-[#0a0a0a]">
             {/* Ambient Background Glows */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] rounded-full bg-purple-900/20 blur-[120px]" />
+                <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] rounded-full bg-purple-900/10 blur-[120px]" />
                 <div className="absolute bottom-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-cyan-900/10 blur-[100px]" />
             </div>
 
-            <div className="relative w-full max-w-7xl z-10">
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="relative w-full max-w-7xl z-10"
+            >
                 <h2 className="text-4xl md:text-6xl font-bold mb-12 text-white tracking-tight text-center md:text-left">About Me</h2>
 
                 <div className="flex flex-col md:flex-row gap-16">
@@ -51,7 +59,7 @@ export default function About() {
                         ))}
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 }

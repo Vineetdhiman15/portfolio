@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 export default function Philosophy() {
     const pillars = [
         {
@@ -15,8 +17,14 @@ export default function Philosophy() {
     ];
 
     return (
-        <section className="relative z-20 w-full py-20 px-6 md:px-12 flex flex-col items-center bg-[#0d0d0d] border-t border-white/5">
-            <div className="w-full max-w-7xl">
+        <section className="relative z-20 w-full py-20 px-6 md:px-12 flex flex-col items-center bg-[#0a0a0a] border-t border-white/5">
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="w-full max-w-7xl"
+            >
                 <h2 className="text-3xl md:text-5xl font-bold mb-12 text-white tracking-tight text-center md:text-left">
                     How I Lead & Build
                 </h2>
@@ -41,7 +49,7 @@ export default function Philosophy() {
                         ))}
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 }
