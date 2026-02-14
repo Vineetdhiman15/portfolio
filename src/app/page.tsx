@@ -55,6 +55,8 @@ export default function Home() {
           <a href="tel:+919780634425" className="hover:text-cyan-400 transition-colors">+91-9780634425</a>
           <span className="hidden md:inline">•</span>
           <a href="https://wa.me/919780634425" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-colors">WhatsApp</a>
+          <span className="hidden md:inline">•</span>
+          <a href="https://t.me/+919780634425" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Telegram</a>
         </div>
         <p className="text-xs text-gray-600">
           &copy; {new Date().getFullYear()} Vineet Dhiman. All rights reserved.
