@@ -52,7 +52,9 @@ export default function Home() {
           <span className="hidden md:inline">•</span>
           <a href="https://linkedin.com/in/vineetdhiman0" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">LinkedIn</a>
           <span className="hidden md:inline">•</span>
-          <span>+91-9780634425</span>
+          <a href="tel:+919780634425" className="hover:text-cyan-400 transition-colors">+91-9780634425</a>
+          <span className="hidden md:inline">•</span>
+          <a href="https://wa.me/919780634425" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-colors">WhatsApp</a>
         </div>
         <p className="text-xs text-gray-600">
           &copy; {new Date().getFullYear()} Vineet Dhiman. All rights reserved.
