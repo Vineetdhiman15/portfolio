@@ -6,37 +6,52 @@ export default function Overlay({ scrollYProgress }: { scrollYProgress: MotionVa
 
     // Section 1: Intro (My Name)
     // Visible from 0 to 0.2
-    const y1 = useTransform(scrollYProgress, [0, 0.2], [0, -100]);
-    const opacity1 = useTransform(scrollYProgress, [0, 0.15], [1, 0]);
+    const y1 = useTransform(scrollYProgress, [0, 0.25], [0, -100]);
+    const opacity1 = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
     // Section 2: "I build digital experiences."
     // Visible from 0.2 to 0.4
-    const y2 = useTransform(scrollYProgress, [0.2, 0.4], [100, -100]);
-    const opacity2 = useTransform(scrollYProgress, [0.2, 0.3, 0.4], [0, 1, 0]);
+    const y2 = useTransform(scrollYProgress, [0.3, 0.5], [100, -100]);
+    const opacity2 = useTransform(scrollYProgress, [0.3, 0.4, 0.5], [0, 1, 0]);
 
     // Section 3: "Bridging design and engineering."
     // Visible from 0.5 to 0.7
-    const y3 = useTransform(scrollYProgress, [0.5, 0.7], [100, -100]);
-    const opacity3 = useTransform(scrollYProgress, [0.5, 0.6, 0.7], [0, 1, 0]);
+    const y3 = useTransform(scrollYProgress, [0.55, 0.75], [100, -100]);
+    const opacity3 = useTransform(scrollYProgress, [0.55, 0.65, 0.75], [0, 1, 0]);
 
     // Section 4: Final Hint
-    // Visible from 0.85 to 1.0
-    const opacity4 = useTransform(scrollYProgress, [0.85, 0.95], [0, 1]);
-    const y4 = useTransform(scrollYProgress, [0.85, 1.0], [50, 0]);
+    // Visible from 0.8 to 1.0
+    const opacity4 = useTransform(scrollYProgress, [0.75, 0.85], [0, 1]);
+    const y4 = useTransform(scrollYProgress, [0.75, 1.0], [50, 0]);
 
     // Initial scroll hint (pulsating arrow/text)
-    const hintOpacity = useTransform(scrollYProgress, [0, 0.05], [1, 0]);
+    const hintOpacity = useTransform(scrollYProgress, [0, 0.02], [1, 0]);
+
+    // Progress percentage
+    const progressText = useTransform(scrollYProgress, [0, 1], [0, 100]);
+    const progressFormatted = useTransform(progressText, (v) => `${Math.round(v)}%`);
 
     return (
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-center pointer-events-none text-white mix-blend-difference">
 
-            {/* Scroll Hint */}
+            {/* Scroll Progress & Hint */}
             <motion.div
-                style={{ opacity: hintOpacity }}
-                className="absolute bottom-10 left-1/2 -track-x-1/2 flex flex-col items-center gap-2"
+                style={{ opacity: useTransform(scrollYProgress, [0, 0.95], [1, 0]) }}
+                className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
             >
-                <span className="text-xs uppercase tracking-[0.3em] font-light">Scroll to Explore</span>
-                <div className="w-[1px] h-12 bg-gradient-to-b from-white to-transparent" />
+                <motion.span className="text-[10px] font-mono opacity-50 mb-1">
+                    {progressFormatted}
+                </motion.span>
+                <div className="w-[120px] h-[2px] bg-white/10 rounded-full overflow-hidden mb-4">
+                    <motion.div
+                        className="h-full bg-white"
+                        style={{ width: useTransform(scrollYProgress, [0, 1], ["0%", "100%"]) }}
+                    />
+                </div>
+                <motion.div style={{ opacity: hintOpacity }} className="flex flex-col items-center gap-2">
+                    <span className="text-xs uppercase tracking-[0.3em] font-light">Scroll to Explore</span>
+                    <div className="w-[1px] h-8 bg-gradient-to-b from-white to-transparent" />
+                </motion.div>
             </motion.div>
 
             {/* Container for centering items */}

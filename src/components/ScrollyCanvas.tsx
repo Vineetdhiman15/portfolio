@@ -134,7 +134,7 @@ export default function ScrollyCanvas({
 
 
     return (
-        <div ref={containerRef} className="h-[500vh] relative w-full">
+        <div ref={containerRef} className="h-[120vh] relative w-full">
             <div className="sticky top-0 h-screen w-full overflow-hidden">
                 <motion.div style={{ opacity: canvasOpacity }} className="absolute inset-0 w-full h-full">
                     <canvas
