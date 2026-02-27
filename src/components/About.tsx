@@ -33,7 +33,7 @@ export default function About() {
                     {/* Left Column: Bio */}
                     <div className="md:w-1/2 space-y-6 text-lg text-gray-300 leading-relaxed">
                         <p>
-                            I’m a <span className="text-cyan-400 font-semibold">Lead Software Engineer</span> with 8+ years of experience building fast, scalable, and visually polished web applications. I combine strong engineering expertise with a deep understanding of design, usability, performance, and modern AI-powered workflows.
+                            I’m <span className="text-white font-bold">Vineet Dhiman</span>, a <span className="text-cyan-400 font-semibold">Lead Software Engineer</span> with 8+ years of experience building fast, scalable, and visually polished web applications. I combine strong engineering expertise with a deep understanding of design, usability, performance, and modern AI-powered workflows.
                         </p>
                         <p>
                             I specialize in React, Next.js, TypeScript, JavaScript, D3.js, Redux, UI libraries (Ant Design, MUI), CSS/SCSS, Storybook, CI/CD, testing (Jest, React Testing Library, Cypress), GraphQL, and modern frontend architectures.

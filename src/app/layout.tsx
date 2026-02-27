@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lead Software Engineer | Scalable Systems & AI Integration",
+  title: "Vineet Dhiman | Lead Software Engineer",
   description: "Senior Frontend Engineer specializing in React, Next.js, and AI-driven development. I build scalable architectures and lead high-performance teams.",
 };
 

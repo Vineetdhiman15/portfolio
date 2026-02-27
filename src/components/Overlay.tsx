@@ -59,10 +59,13 @@ export default function Overlay({ scrollYProgress }: { scrollYProgress: MotionVa
 
                 {/* Section 1 */}
                 <motion.div style={{ y: y1, opacity: opacity1 }} className="absolute inset-0 flex flex-col items-center justify-center text-center">
-                    <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-4">
-                        Lead Software Engineer
+                    <h1 className="text-6xl md:text-9xl font-bold tracking-tighter mb-2">
+                        Vineet Dhiman
                     </h1>
-                    <p className="text-xl md:text-2xl font-light text-gray-300 mb-8">
+                    <h2 className="text-2xl md:text-4xl font-semibold tracking-tight text-cyan-400 mb-6 uppercase">
+                        Lead Software Engineer
+                    </h2>
+                    <p className="text-lg md:text-xl font-light text-gray-400 mb-10">
                         React • Next.js • TypeScript
                     </p>
                     <a
