@@ -47,16 +47,18 @@ export default function Home() {
           Download Resume
         </a>
 
-        <div className="flex flex-col md:flex-row gap-8 mb-12 text-gray-400">
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-12 text-gray-400 text-sm max-w-4xl px-4">
           <a href="mailto:vineetdhiman15@gmail.com" className="hover:text-cyan-400 transition-colors">vineetdhiman15@gmail.com</a>
-          <span className="hidden md:inline">•</span>
+          <span>•</span>
           <a href="https://linkedin.com/in/vineetdhiman0" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">LinkedIn</a>
-          <span className="hidden md:inline">•</span>
+          <span>•</span>
+          <a href="https://topmate.io/vineetdhiman" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">Topmate</a>
+          <span>•</span>
+          <a href="https://calendly.com/vineetdhiman15/30min" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">Calendly</a>
+          <span>•</span>
           <a href="tel:+919780634425" className="hover:text-cyan-400 transition-colors">+91-9780634425</a>
-          <span className="hidden md:inline">•</span>
+          <span>•</span>
           <a href="https://wa.me/919780634425" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-colors">WhatsApp</a>
-          <span className="hidden md:inline">•</span>
-          <a href="https://t.me/+919780634425" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Telegram</a>
         </div>
         <p className="text-xs text-gray-600">
           &copy; {new Date().getFullYear()} Vineet Dhiman. All rights reserved.

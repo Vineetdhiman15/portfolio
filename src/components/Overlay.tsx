@@ -62,15 +62,15 @@ export default function Overlay({ scrollYProgress }: { scrollYProgress: MotionVa
                     <h1 className="text-6xl md:text-9xl font-bold tracking-tighter mb-2">
                         Vineet Dhiman
                     </h1>
-                    <h2 className="text-2xl md:text-4xl font-semibold tracking-tight text-cyan-400 mb-6 uppercase">
-                        Lead Software Engineer
+                    <h2 className="text-xl md:text-3xl font-semibold tracking-tight text-cyan-400 mb-4 uppercase">
+                        Full Stack Engineering Lead (8+ yrs)
                     </h2>
-                    <p className="text-lg md:text-xl font-light text-gray-400 mb-10">
-                        React • Next.js • TypeScript
+                    <p className="text-base md:text-lg font-light text-gray-300 mb-8 max-w-2xl">
+                        React.js • Node.js • TypeScript • AWS • Microservices • GenAI / LLM & RAG
                     </p>
                     <a
                         href="https://drive.google.com/uc?export=download&id=1shBDsm2rCF3ft2SgGz7ALWDexJQI8zR1"
-                        className="pointer-events-auto px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-cyan-400 transition-colors"
+                        className="pointer-events-auto px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-cyan-400 transition-colors shadow-lg shadow-cyan-500/10"
                         download
                     >
                         Download Resume
@@ -79,25 +79,25 @@ export default function Overlay({ scrollYProgress }: { scrollYProgress: MotionVa
 
                 {/* Section 2 */}
                 <motion.div style={{ y: y2, opacity: opacity2 }} className="absolute inset-0 flex flex-col items-start justify-center left-10 md:left-20">
-                    <h2 className="text-5xl md:text-7xl font-semibold leading-tight max-w-md">
-                        Driving conversion & performance.
+                    <h2 className="text-4xl md:text-6xl font-semibold leading-tight max-w-lg">
+                        Building & scaling end-to-end production systems.
                     </h2>
                 </motion.div>
 
                 {/* Section 3 */}
                 <motion.div style={{ y: y3, opacity: opacity3 }} className="absolute inset-0 flex flex-col items-end justify-center right-10 md:right-20 text-right">
-                    <h2 className="text-5xl md:text-7xl font-semibold leading-tight max-w-md">
-                        Expert in Scalable UI Architecture.
+                    <h2 className="text-4xl md:text-6xl font-semibold leading-tight max-w-lg">
+                        Architecting Cloud, Microservices & GenAI solutions.
                     </h2>
                 </motion.div>
 
                 {/* Section 4: Transition to content */}
                 <motion.div style={{ y: y4, opacity: opacity4 }} className="absolute inset-0 flex flex-col items-center justify-center text-center">
                     <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
-                        A Passion for Excellence.
+                        Technical Leadership & Innovation.
                     </h2>
                     <p className="text-lg md:text-xl text-gray-400">
-                        Scroll down to learn more about my journey.
+                        Scroll down to explore my experience and impact.
                     </p>
                 </motion.div>
 
