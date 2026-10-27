@@ -69,7 +69,7 @@ export default function Overlay({ scrollYProgress }: { scrollYProgress: MotionVa
                         React.js • Node.js • TypeScript • AWS • Microservices • GenAI / LLM & RAG
                     </p>
                     <a
-                        href="https://drive.google.com/uc?export=download&id=1shBDsm2rCF3ft2SgGz7ALWDexJQI8zR1"
+                        href="https://drive.google.com/uc?export=download&id=1qHR9jo8BHj6OuMlgsTqIyRxxg9my7d5L"
                         className="pointer-events-auto px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-cyan-400 transition-colors shadow-lg shadow-cyan-500/10"
                         download
                     >
